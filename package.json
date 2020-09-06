@@ -1,0 +1,26 @@
+{
+  "name": "dynamic-wkhtmltopdf",
+  "version": "1.0.0",
+  "description": "Create dynamic PDF from Handlebar template",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/navjotdhanawat/dynamic-wkhtmltopdf"
+  },
+  "keywords": [],
+  "author": "Navjot Dhanawat <navjotdhanawat@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/navjotdhanawat/dynamic-wkhtmltopdf"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/navjotdhanawat/dynamic-wkhtmltopdf/issues"
+  },
+  "dependencies": {
+    "handlebars": "4.7.6",
+    "wkhtmltopdf": "0.3.4"
+  }
+}
