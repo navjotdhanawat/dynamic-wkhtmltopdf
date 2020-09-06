@@ -45,7 +45,7 @@ For example:
 Register helper inside js file:
 ```
 // Custom If condition inside handlebar(JS file)
-var pdf = require('dynamic-html-pdf');
+var pdf = require('dynamic-wkhtmltopdf');
 pdf.registerHelper('ifCond', function (v1, v2, options) {
     if (v1 === v2) {
         return options.fn(this);
@@ -68,7 +68,7 @@ Utilize registered helper inside handlebar template:
 
 ```
 var fs = require('fs');
-var pdf = require('dynamic-html-pdf');
+var pdf = require('dynamic-wkhtmltopdf');
 var html = fs.readFileSync('template.html', 'utf8');
 
 // Custom handlebar helper
