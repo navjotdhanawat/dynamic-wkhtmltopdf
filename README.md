@@ -80,10 +80,10 @@ pdf.registerHelper('ifCond', function (v1, v2, options) {
 })
 
 var options = {
-    format: "A3",
-    orientation: "portrait",
-    border: "10mm"
+    pageSize: "A3"
 };
+// for more options refer wkhtmltopdf official documentation
+
 
 var users = [
     {
@@ -104,12 +104,12 @@ var users = [
 ];
 
 var document = {
-    type: 'buffer',     // 'file' or 'buffer'
+    type: 'file',     // 'file' or 'buffer' or 'stream'
     template: html,
     context: {
         users: users
     },
-    path: "./output.pdf"    // it is not required if type is buffer
+    path: "./output.pdf"    // it is not required if type is buffer or stream
 };
 
 pdf.create(document, options)
